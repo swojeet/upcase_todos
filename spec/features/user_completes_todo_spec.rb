@@ -8,6 +8,7 @@ feature "User completes a todo" do
 
     # check ('Buy milk')
     click_on "Mark as complete"
+
     expect(page).to display_completed_todo "Buy milk"
   end
 
